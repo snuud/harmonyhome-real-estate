@@ -1,0 +1,27 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <div class="container">
+            <li class="breadcrumb-item active" aria-current="page">All Properties</li>
+        </div>
+    </ol>
+</nav>
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-lg-3" ng-repeat="property in vm.properties">
+            <div class="card text-center">
+                <div class="thumbnail">
+                    <img class="card-img-top" ng-src="{{property.image}}">
+                    <div class="middle">
+                        <div class="text"><a href="#" class=" btn btn-info">View Details</a></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-success">{{property.option}} {{property.price | currency}}</h5>
+                    <p class="card-text">{{property.location}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</div>
