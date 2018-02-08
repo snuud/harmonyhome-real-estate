@@ -40,6 +40,11 @@ function config($routeProvider, $locationProvider){
             controller: ContactController,
             controllerAs: 'vm'
         }).
+        when('/upload', {
+            templateUrl: 'angular-app/views/upload.html',
+            controller: UploadController,
+            controllerAs: 'vm'
+        }).
         otherwise({
             redirectTo : '/'
         });
